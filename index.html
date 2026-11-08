@@ -109,7 +109,7 @@ footer{padding:28px 20px;text-align:center;color:#87909e;font-size:11px;letter-s
 </div>
 <script>
 /* Demo access gate only. See README for important privacy/security notes. */
-const GALLERY_PASSWORD = "Geo@2026";
+const GALLERY_PASSWORD = "2026";
 const loginForm=document.getElementById("loginForm"), lock=document.getElementById("lock");
 loginForm.addEventListener("submit",e=>{e.preventDefault();if(document.getElementById("password").value===GALLERY_PASSWORD){lock.style.display="none";sessionStorage.setItem("gallery-unlocked","yes")}else{document.getElementById("error").textContent="That password is not correct. Please try again."}});
 if(sessionStorage.getItem("gallery-unlocked")==="yes")lock.style.display="none";
